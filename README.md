@@ -6,6 +6,9 @@ JavaScript study notes for interview preparation and answers to some basic inter
 # Table of Contents
 - [Async vs Defer](#async-vs-defer)
 - [Temporal Dead Zone (TDZ)](#temporal-dead-zone-tdz)
+- [Abstract Equality Comparison (x==y)](#abstract-equality-comparison-xy)
+- [Basic Math Operations in JavaScript](#basic-math-operations-in-javascript)
+- [Call vs Apply vs Bind](#call-vs-apply-vs-bind)
 
 
 ## Async vs Defer
@@ -33,10 +36,32 @@ JavaScript study notes for interview preparation and answers to some basic inter
 ## Basic Math Operations in JavaScript
 
  1. If one of the operands is *STRING* **--->**  then the other one will also be considered *STRING*. Objects will be converted to strings as `[object Object]`
- 2. If both operands are *BOOLEAN* or one of them is a *BOOLEAN* and another one is a *NUMBER* **--->** then *BOOLEAN* will be converted to *NUMBER*
- 3. An empty array is converted either to an empty string or into 0 whenever possible.
-![js-operation](https://user-images.githubusercontent.com/19211475/205461672-f82c6ba4-729c-44d2-89ca-63ac2827e27a.jpg)
+ 1. If both operands are *BOOLEAN* or one of them is a *BOOLEAN* and another one is a *NUMBER* **--->** then *BOOLEAN* will be converted to *NUMBER*
+ 1. An empty array is converted either to an empty string or into 0 whenever possible.
+
+![js-operations](https://user-images.githubusercontent.com/19211475/205461672-f82c6ba4-729c-44d2-89ca-63ac2827e27a.jpg)
 
 
 #### References
  - https://learn.coderslang.com/0002-basic-javascript-arithmetics/
+
+
+## Call vs Apply vs Bind
+
+### Call()
+
+ 1. Using call() method we can do the function borrowing.
+ 1. The first argument in *call()* is the reference to other data (where we want *this* should point to) and rest of the other arguments are parameters for the function on which we are calling the *call()* method.
+
+### Apply()
+
+ 1. The only difference between *Apply* and *Call* methods is the way how we pass the arguments.
+ 1. The second arguments in Apply method is the array of arguments. And in call method we pass the arguments individually as comma separated.
+ 
+ ### Bind()
+ 1. The Bind method is similar to Call method, instead of directly calling or invoking the methods in case of call and apply, the bind method will returns a new method which can be called/invoked later in the program.
+
+<img width="1512" alt="Screenshot 2022-12-04 at 2 54 28 AM" src="https://user-images.githubusercontent.com/19211475/205462913-144d2a8d-dd4e-47cd-936b-448da6616913.png">
+
+#### References
+ - https://www.youtube.com/watch?v=75W8UPQ5l7k
