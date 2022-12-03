@@ -5,7 +5,7 @@ JavaScript study notes for interview preparation and answers to some basic inter
 
 # Table of Contents
 - [Async vs Defer](#async-vs-defer)
-- [Temporal Dead Zone (TDZ)](#temporal-dead-zone-(tdz)-)
+- [Temporal Dead Zone (TDZ)](#temporal-dead-zone-tdz)
 
 
 ## Async vs Defer
@@ -35,6 +35,8 @@ JavaScript study notes for interview preparation and answers to some basic inter
  1. If one of the operands is *STRING* **--->**  then the other one will also be considered *STRING*. Objects will be converted to strings as `[object Object]`
  2. If both operands are *BOOLEAN* or one of them is a *BOOLEAN* and another one is a *NUMBER* **--->** then *BOOLEAN* will be converted to *NUMBER*
  3. An empty array is converted either to an empty string or into 0 whenever possible.
+![js-operation](https://user-images.githubusercontent.com/19211475/205461672-f82c6ba4-729c-44d2-89ca-63ac2827e27a.jpg)
+
 
 #### References
  - https://learn.coderslang.com/0002-basic-javascript-arithmetics/
