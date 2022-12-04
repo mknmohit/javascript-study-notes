@@ -71,6 +71,7 @@ JavaScript study notes for interview preparation and answers to some basic inter
 
 # Currying
 `fn(a,b,c)`  --->  `fn(a)(b)(c)`
+
 Transforming a function having multiple arguments into a sequence of functions with a single argument.
 
 ### Advantages of Currying
