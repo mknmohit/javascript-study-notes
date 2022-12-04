@@ -1,4 +1,5 @@
 
+
 # Javascript Study Notes
 
 JavaScript study notes for interview preparation and answers to some basic interview questions which will be helpful for cracking interviews.
@@ -9,6 +10,7 @@ JavaScript study notes for interview preparation and answers to some basic inter
 - [Abstract Equality Comparison (x==y)](#abstract-equality-comparison-xy)
 - [Basic Math Operations in JavaScript](#basic-math-operations-in-javascript)
 - [Call vs Apply vs Bind](#call-vs-apply-vs-bind)
+- [Currying](#currying)
 
 
 # Async vs Defer
@@ -65,3 +67,23 @@ JavaScript study notes for interview preparation and answers to some basic inter
 
 #### References
  - https://www.youtube.com/watch?v=75W8UPQ5l7k
+
+
+# Currying
+`fn(a,b,c)`  --->  `fn(a)(b)(c)`
+Transforming a function having multiple arguments into a sequence of functions with a single argument.
+
+### Advantages of Currying
+
+ 1. Currying helps us to avoid passing the same variable again and again.
+ 2. It divides our function into multiple smaller functions that can handle one responsibility. This makes our function pure and less prone to errors and side effects.
+ 3. It is used to create a higher order function.
+
+### Examples of Currying
+
+#### sum(a)(b)(c)
+<img alt="function currying in javascript" src="https://user-images.githubusercontent.com/19211475/205486761-68571ab1-7cd4-4b8e-a641-62eb232e5598.png">
+
+#### sum(a)(b)(c)..........(n)()
+<img alt="function currying with n parameters" src="https://user-images.githubusercontent.com/19211475/205487058-6934b787-bd2c-480b-a054-04f68c485aa9.png">
+
